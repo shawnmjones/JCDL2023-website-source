@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+    {% include head.html %}
+
+    <style>
+        #header {
+            background: rgba(6, 12, 34, 0.98);
+            height: 70px;
+        }
+    </style>
+
+    </head>
+
+<body>
+
+    {% include nav.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    {% include javascripts.html %}
+
+</body>
+
+</html>
