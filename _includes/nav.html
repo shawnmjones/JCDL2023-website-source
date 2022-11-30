@@ -11,14 +11,18 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
 
         <ul>
-          <li><a class="nav-link scrollto active" href="{{ site.url }}">Home</a></li>
+          <li><a class="nav-link scrollto {% if page.url == '/' %}active{% endif %}" href="{{ site.url }}">Home</a></li>
           <!-- <li class="dropdown"><a href="#" title="Attendance information coming soon"><span>Attend</span><i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="/attend/travel/">Travel To Santa Fe</a></li>
             </ul>
           </li> -->
-          <!-- <li><a class="nav-link scrollto" href="#" title="Program coming soon">Program</a></li> -->
-          <li class="dropdown"><a href="#"><span>Calls</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto {% if page.url contains '/program/' %}active{% endif %}" href="#"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{{ site.url }}/program/schedule/">Conference Schedule</a></li>
+            <li><a>More coming soon...</a></li>
+          </ul>
+          <li class="dropdown"><a class="nav-link scrollto {% if page.url contains '/calls/' %}active{% endif %}" href="#"><span>Calls</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <!--
             <li><a href="#">Drop Down 1</a></li>
@@ -33,16 +37,16 @@
             </li>
             -->
             <li><a href="{{ site.url }}/calls/papers/">Research Papers</a></li>
-            <li><a href="#" title="Poster CFP coming soon">Posters (coming soon)</a></li>
-            <li><a href="#" title="Tutorials CFP coming soon">Tutorials  (coming soon)</a></li>
+            <li><a title="Poster CFP coming soon">Posters (coming soon)</a></li>
+            <li><a title="Tutorials CFP coming soon">Tutorials  (coming soon)</a></li>
             <!-- <li><a href="/calls/posters/">Posters</a></li>
             <li><a href="/calls/tutorials/">Tutorials</a></li> -->
           </ul>
 
         </li> 
-        <li><a class="nav-link scrollto" href="{{ site.url }}/organizers/">Organizers</a></li>
+        <li><a class="nav-link scrollto {% if page.url == '/organizers/' %}active{% endif %}" href="{{ site.url }}/organizers/" >Organizers</a></li>
         <!-- <li><a class="nav-link scrollto" href="/sponsors/">Sponsors</a></li> -->
-        <li><a class="nav-link scrollto" href="{{ site.url }}/dates/">Important Dates</a></li>
+        <li><a class="nav-link scrollto {% if page.url == '/dates/' %}active{% endif %}" href="{{ site.url }}/dates/">Important Dates</a></li>
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
