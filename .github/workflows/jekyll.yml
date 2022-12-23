@@ -53,20 +53,15 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: test environment
-      env:
-        ftp_hostname: "${{ secrets.ftp_hostname }}"
-      run: echo hostname = ${{ secrets.ftp_hostname }} =
-    - name: Deploy to website
-      uses: SamKirkland/FTP-Deploy-Action@4.3.3
-      with:
-        server: ${{ secrets.FTP_HOSTNAME }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./_site/
-        dry-run: true
+      - name: test environment
+        env:
+          ftp_hostname: "${{ secrets.ftp_hostname }}"
+        run: echo hostname = ${{ secrets.ftp_hostname }} =
+      - name: Deploy to website
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.FTP_HOSTNAME }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./_site/
+          dry-run: true
