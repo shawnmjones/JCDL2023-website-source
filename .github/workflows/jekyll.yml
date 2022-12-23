@@ -53,17 +53,25 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: test environment
-        env:
-          ftp_hostname: "${{ secrets.ftp_hostname }}"
-        run: echo hostname = ${{ secrets.ftp_hostname }} =
       - name: Deploy to website
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        uses: sebastianpopp/ftp-action@releases/v2
         with:
-          server: ${{ secrets.FTP_HOSTNAME }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./_site/
-          dry-run: false
-          security: loose
-          protocol: ftps
+            host: ${{ secrets.FTP_HOSTNAME }}
+            user: ${{ secrets.FTP_USERNAME }}
+            password: ${{ secrets.FTP_PASSWORD }}
+            localDir: "./_site/"
+            remoteDir: "."
+            forceSsl: true
+
+
+#   We encountered this bug in SamKirkland's FTP-Deploy-Action,
+#   see: https://github.com/SamKirkland/FTP-Deploy-Action/issues/322
+#        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+#        with:
+#          server: ${{ secrets.FTP_HOSTNAME }}
+#          username: ${{ secrets.FTP_USERNAME }}
+#          password: ${{ secrets.FTP_PASSWORD }}
+#          local-dir: ./_site/
+#          dry-run: false
+#          security: loose
+#          protocol: ftps
