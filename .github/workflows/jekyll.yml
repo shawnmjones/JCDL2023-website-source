@@ -50,7 +50,10 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    
     steps:
+    - name: test environment
+      run: echo hostname: ${{ secrets.FTP_HOSTNAME }}
     - name: Deploy to website
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
