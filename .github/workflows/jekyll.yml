@@ -65,3 +65,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./_site/
           dry-run: true
+          security: loose
+          protocol: ftps
