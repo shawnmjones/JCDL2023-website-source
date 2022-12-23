@@ -64,6 +64,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./_site/
-          dry-run: true
+          dry-run: false
           security: loose
           protocol: ftps
