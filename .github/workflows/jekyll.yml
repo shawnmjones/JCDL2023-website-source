@@ -53,7 +53,9 @@ jobs:
     
     steps:
     - name: test environment
-      run: echo hostname ${{ secrets.FTP_HOSTNAME }}
+      env:
+        ftp_hostname: ${{ secrets.FTP_HOSTNAME }}
+      run: echo hostname = $ftp_hostname" =
     - name: Deploy to website
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
