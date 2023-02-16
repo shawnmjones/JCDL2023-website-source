@@ -59,3 +59,4 @@ plugins:
 exclude:
   - logo-work/
   - other-photos/
+  - organization-docs/
