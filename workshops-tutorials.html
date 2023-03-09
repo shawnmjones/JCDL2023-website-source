@@ -1,0 +1,187 @@
+---
+
+layout: default
+pagetitle: ACM/IEEE JCDL 2023 - Workshops and Tutorials
+pagedescription: The ACM/IEEE-CS Joint Conference on Digital Libraries (JCDL) is a major international forum focusing on digital libraries and associated technical, practical, and social issues. This page covers workshops and tutorials.
+pageurl: https://2023.jcdl.org/program/workshops-tutorials/
+striking_image: https://2023.jcdl.org/assets/img/hero-bg.jpg
+permalink: /program/workshops-tutorials/
+
+---
+
+<main id="main">
+
+    <section id="speakers">
+
+        <div class="container aos-init aos-animate" data-aos="fade-up" style="margin-top: 90px;">
+
+            <div class="section-header">
+            <h1>Workshops and Tutorials</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <h2>Contents</h2>
+
+                    <ol>
+                        <li><a href="#workshops">Workshops</a></li>
+                        <ol>
+                            {% for workshop in site.data.workshops %}
+
+                            <li><a href="#{{ workshop.htmlid }}"">{{ workshop.name }}</a></li>
+
+                            {% endfor %}
+                        </ol>
+                        <li><a href="#tutorials">Tutorials</a></li>
+                        <ol>
+                            {% for tutorial in site.data.tutorials %}
+
+                            <li><a href="#{{ tutorial.htmlid }}"">{{ tutorial.name }}</a></li>
+
+                            {% endfor %}
+                        </ol>
+                    </ol>
+
+                </div>
+
+            </div>
+
+<h3 id="workshops" class="scrolltoheader">Workshops</h3>
+
+{% for workshop in site.data.workshops %}
+
+<hr>
+
+<h4 id="{{ workshop.htmlid }}" class="scrolltoheader">{{ workshop.name }}</h4>
+
+<div class="row justify-content-center">
+
+    {% if workshop.authors.size > 1 %}
+
+    <p>got {{ workshop.authors.size }} authors</p>
+
+    {% for author in workshop.authors %}
+
+    <div class="col-lg-3 col-md-6">
+
+        <div class="speaker aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+
+            <img src="{{ site.url }}/assets/img/people/{{ author.image }}" alt="{{ author.name }}, {{ author.affiliation }}" class="img-fluid" style="height:244px;">
+            <div class="details" style="width: 208px; margin: auto;">
+                <p style="text-align: center; font-size: 16px;">
+                    {{ author.name }}
+                </p>
+                {% if author.affiliation %}
+                <p style="text-align: center; font-size: 16px;">{{ author.affiliation }}</p>
+                {% endif %}
+                <div class="social">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    {% endfor %}
+
+    {% endif %}
+
+</div>
+
+<div class="row justify-content-center">
+
+    {% if workshop.abstract %}
+
+    <div class="col-md-12"><p><strong>Duration:</strong> {{ workshop.duration }}</p></div>
+    <div class="col-md-12"><p><strong>Website:</strong> <a href="{{ workshop.website }}">{{ workshop.website }}</a></p></div>
+    {% if workshop.submission %}
+    <div class="col-md-12"><p><strong>Submission via easychair:</strong> <a href="{{ workshop.submission }}">{{ workshop.submission }}</a></p></div>
+    {% endif %}
+    <div class="col-md-12">
+        <p><strong>Abstract:</strong> {{ workshop.abstract }}</p>
+    </div>
+
+    {% else %}
+
+    <div class="col-md-12">
+        <p><strong><em>Workshop details coming soon</em></strong></p>
+    </div>
+
+    {% endif %}
+
+</div>
+
+{% endfor %}
+
+
+<h3 id="tutorials" class="scrolltoheader">Tutorials</h3>
+
+{% for tutorial in site.data.tutorials %}
+
+<hr>
+
+<h4 id="{{ workshop.htmlid }}" class="scrolltoheader">{{ tutorial.name }}</h4>
+
+<div class="row justify-content-center">
+
+    {% if tutorial.authors.size > 1 %}
+
+    {% for author in tutorial.authors %}
+
+    <div class="col-lg-3 col-md-6">
+
+        <div class="speaker aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+
+            <img src="{{ site.url }}/assets/img/people/{{ author.image }}" alt="{{ author.name }}, {{ author.affiliation }}" class="img-fluid" style="height:244px;">
+            <div class="details" style="width: 208px; margin: auto;">
+                <p style="text-align: center; font-size: 16px;">
+                    {{ author.name }}
+                </p>
+                {% if author.affiliation %}
+                <p style="text-align: center; font-size: 16px;">{{ author.affiliation }}</p>
+                {% endif %}
+                <div class="social">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    {% endfor %}
+
+    {% endif %}
+
+</div>
+
+<div class="row justify-content-center">
+
+    {% if tutorial.abstract %}
+
+    <div class="col-md-12"><p><strong>Duration:</strong> {{ tutorial.duration }}</p></div>
+    <div class="col-md-12"><p><strong>Website:</strong> <a href="{{ tutorial.website }}">{{ tutorial.website }}</a></p></div>
+    {% if tutorial.submission %}
+    <div class="col-md-12"><p><strong>Submission via easychair:</strong> <a href="{{ tutorial.submission }}">{{ tutorial.submission }}</a></p></div>
+    {% endif %}
+    <div class="col-md-12">
+        <p><strong>Abstract:</strong> {{ tutorial.abstract }}</p>
+    </div>
+
+    {% else %}
+
+    <div class="col-md-12">
+        <p><strong><em>Tutorial details coming soon</em></strong></p>
+    </div>
+
+    {% endif %}
+
+</div>
+
+{% endfor %}
+
+
+        </div>
+
+    </section>
+
+  </main>
