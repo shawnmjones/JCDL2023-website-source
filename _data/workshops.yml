@@ -1,0 +1,118 @@
+- name: Innovation Measurement for Scientific Communication (IMSC) in the Era of Big Data
+  htmlid: imsc
+  duration: Half-Day
+  website: https://jcdl2023workshop-imsc.github.io/IMSC2023-workshop/
+  submission: https://easychair.org/conferences/?conf=imsc20230
+  abstract: The increasingly mature artificial intelligence technologies, such as big data, deep learning, and natural language processing, provide technical support for research on automatic text understanding and bring development opportunities for innovative measurement of scientific communication. Innovation measurement in scientific communication is a challenging and cutting-edge direction in Informetrics. It is interdisciplinary, requiring considering the characteristics of different disciplines and different types of scientific outcomes to establish a comprehensive evaluation metrics system. On the other hand, metadata and content features should be considered to reflect the innovation of scientific works objectively and comprehensively. This workshop focuses on the discussion and produces enlightening outcomes. We will engage broad audiences to share their ideas and pre-productions, enabling an interdisciplinary approach to exploring frontier areas. This workshop consists of keynotes, oral presentations, and poster sessions and would attract interest from academic researchers, librarians, and decision-makers from governments and practical sectors.
+  authors:
+    - name: Zhongyi Wang
+      affiliation: Central China Normal University
+      image: zhongyi-wang.jpg
+
+    - name: Haihua Chen
+      affiliation: University of North Texas
+      image: haihua-chen.png
+
+    - name: Chengzhi Zhang
+      affiliation: Nanjing University of Science and Technology
+      image: chengzhi-zhang.png
+
+    - name: Wei Lu
+      affiliation: Wuhan University
+      image: wei-lu.jpg
+
+    - name: Jian Wu
+      affiliation: Old Dominion University
+      image: jian-wu.jpg
+
+- name: Joint Workshop of the 4th Extraction and Evaluation of Knowledge Entities from Scientific Documents (EEKE2023) and the 3rd AI + Informetrics (AII2023)
+  htmlid: eeke
+  website: https://eeke-workshop.github.io/2023/
+  submission: 
+  duration: Full Day
+  abstract: The 4th Workshop on Extraction and Evaluation of Knowledge Entities from Scientific Documents (EEKE 2023) and the 3rd AI + Informetrics (AII2023) will be held in New Mexico, USA and online at the ACM/IEEE Joint Conference on Digital Libraries (JCDL) 2023. The goal of these two workshop series (<a href="https://eeke-workshop.github.io/">https://eeke-workshop.github.io/</a> and <a href="https://ai-informetrics.github.io/">https://ai-informetrics.github.io/</a>) are to engage the related communities in open problems in the extraction and evaluation of knowledge entities from scientific documents and the modeling and applications of AI + Informetrics for broad interests in science of science, science, technology, & innovation (ST&I), etc. This joint workshop consists of keynotes, oral presentations, and posters, and will attract not only academic researchers and librarians but also decision makers from governments and practical sectors.
+  authors:
+    - name: Chengzhi Zhang
+      affiliation: Nanjing University of Science and Technology
+      image: chengzhi-zhang.png
+
+    - name: Yi Zhang
+      affiliation: University of Technology Sydney
+      image: yi-zhang.jpeg
+
+    - name: Philipp Mayr
+      affiliation:  GESIS - Leibniz-Institute for the Social Sciences
+      image: philipp-mayr.jpg
+
+    - name: Wei Lu
+      affiliation: Wuhan University
+      image: wei-lu.jpg
+
+    - name: Arho Suominen
+      affiliation: Tampere University
+      image: arho-suominen.png
+
+    - name: Haihua Chen
+      affiliation: University of North Texas
+      image: haihua-chen.png
+
+    - name: Ying Ding
+      affiliation: University of Texas at Austin
+      image: ying-ding.jpg
+
+- name: 2nd International Workshop on Digital Language Archives
+  htmlid: iwdla
+  website:
+  submission:
+  duration: Full Day
+  abstract:
+  authors:
+    - name:
+      affiliation: 
+      image: 
+
+- name: Persistent Identifiers & US Federal Agency Policies
+  htmlid: piufap
+  website:
+  submission:
+  duration: Half-Day
+  abstract:
+  authors:
+    - name:
+      affiliation: 
+      image: 
+
+- name: FAIR Data for Large Research Facilities
+  htmlid: fair
+  website:
+  submission:
+  duration: Full Day
+  abstract:
+  authors:
+    - name:
+      affiliation: 
+      image: 
+
+- name: Web Archiving and Digital Libraries (WADL) 2023
+  htmlid: wadl
+  website: https://fox.cs.vt.edu/wadl2023.html
+  submission: 
+  duration: Full Day
+  abstract: The 2023 edition of the Workshop on Web Archiving and Digital Libraries (WADL) will explore the integration of web archiving and digital libraries. The workshop aims at addressing aspects covering the entire life cycle of digital resources, including such as social media, scholarly and government datasets, 3D objects, and digital online art.creation/authoring, uploading/publishing, crawling, indexing, exploration, and archiving. It will also explore areas such as archiving processes and tools for "non-traditional" resources such as social media, scholarly and government datasets, 3D objects, and digital online art.
+  authors:
+    - name: Mat Kelly
+      affiliation: Drexel University
+      image: mat-kelly.jpg
+
+    - name: Brenda Reyes Ayala
+      affiliation: University of North Texas
+      image: brenda-reyes-ayala.jpg
+
+    - name: Zhiwu Xie
+      affiliation: Virginia Tech Libraries
+      image: zhiwu-xie.jpg
+
+    - name: Edward Fox
+      affiliation: Virginia Tech
+      image: edward-fox.jpg
+
