@@ -7,7 +7,7 @@
   abstract: This tutorial provides a high-level overview of the rationale of Solid, an introduction to the protocol suite, and the data description approach using linked data. The participants will get a general introduction to the need for decentralization and the rationale of Solid. They will get a hands-on introduction to the capabilities of the Solid protocol. They will learn about the differences with other Linked Data Platform solutions such as Fedora Commons. Demonstrations will be provided on how to protect online resources and a discussion about Solid's potential for open science.
   authors:
     - name: Patrick Hochstenbach
-      affiliation: Ghent University Library IT & IMEC-IDLab
+      affiliation: "Ghent University Library IT <br>&amp; IMEC-IDLab"
       image: patrick-hochstenbach.jpg
 
 - name: Up and running with ARK persistable identifiers
