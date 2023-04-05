@@ -32,6 +32,7 @@
   website:
   submission:
   duration: Half-Day
+  delivery: Hybrid
   abstract: "In a Digital Library environment, we can define Digital cultural landscapes as “virtual ecosystems” in which digital cultural heritage subsets are related with entities such as people, places, events, fonds, etc., according to different visions and interpretations, in a pluralism generating new knowledge and opening up new perspectives. These virtual ecosystems today can be easily structured by cultural institutions, using a popular application such as DSpace, the world's most widely used open-source Digital Asset Management System.<br>The proposed 3 hours online tutorial will show how to manage digital cultural contents in DSpace to model digital cultural landscapes either as Networks, as Paths, or as Aggregations.<br>However, even if the illustrated workflow, the examples and the use cases will be related to DSpace, the proposed methodological approach can be implemented in any system that has sufficiently granular and consistent metadata and an extensible data model."
 
   authors:
