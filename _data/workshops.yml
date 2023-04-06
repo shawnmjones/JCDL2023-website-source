@@ -108,12 +108,16 @@
   website:
   submission:
   delivery: In-Person
-  duration: Full Day
-  abstract:
+  duration: Half-Day
+  abstract: "Major Research Facilities and large research institutions have complex cyberinfrastructure and workflow needs. There are increasing calls for data openness and sharing, such as with the Nelson memo from last fall, and this is balanced by the complexity to store and manage the this amount of research data. This workshop will facilitate discussion on the problems faced in the research data management of these organizations, and approaches to dealing with these issues through processes, technical tools, or policy."
   authors:
-    - name:
-      affiliation: 
-      image: 
+    - name: David Butcher
+      affiliation: National High Magnetic Field Laboratory
+      image: david-butcher.jpeg
+      
+    - name: Don Brower
+      affiliation: University of Notre Dame
+      image: don-brower.jpeg
 
 - name: Web Archiving and Digital Libraries (WADL) 2023
   htmlid: wadl
