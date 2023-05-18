@@ -1711,3 +1711,15 @@ h6 {
   font-size: 13px;
   color: #ddd;
 }
+
+/* Stuff added by Shawn Jones */
+.keynote-photo {
+  max-width: 400px;
+}
+
+@media (max-width: 375px) {
+  .keynote-photo {
+    max-width: 300px;
+      border: solid 1px red;
+  }
+
