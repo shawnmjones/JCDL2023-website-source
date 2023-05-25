@@ -82,7 +82,7 @@
   htmlid: piufap
   website:
   submission:
-  delivery: In-Person
+  delivery: Hybrid
   duration: Half-Day
   abstract: "In recent years the US Government has issued two policy guidance memos that will likely have a large impact on academic research. This workshop seeks to walk  through the 2021 National Security Presidential Memo 33 (NSPM-33) ,the 2022 OSTP Public Access Memo and share how use of persistent identifiers (PIDs) are key to ensuring compliance. We’ll share PID aspects of the implementation guidance provided for NSPM-33,  timelines and next steps for the Public Access Memo, and implementation options for both memos. Moving to the technical side, we’ll discuss how the various persistent identifiers function in ensuring trustworthy metadata by from other systems via the API, specifically affiliation metadata (ROR), publication and grant metadata (Crossref) and author and contributing author metadata (ORCID). Finally, we’ll ensure time for interaction and discussion to ensure that research institutions, research administrators, repository managers, are familiar with how their landscape as well as that of funders and publishers will change and how to ensure their community is well-prepared."
 
