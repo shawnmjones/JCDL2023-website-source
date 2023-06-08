@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+    {% include head.html %}
+
+    <style>
+
+        table, tr, td {
+            /* border:rgba(6, 12, 34, 0.98) solid 2px; */
+            padding: 15px;
+        }
+
+        .pagebreak {
+            page-break-before: always;
+        } /* page-break-after works, as well */
+
+        .logoback {
+            background-color: black;
+        }
+
+        @media print {
+
+            @page {
+                size: landscape
+            }
+
+            header {
+                position: fixed;
+                top: 0;
+            }
+
+            .content-block, p {
+                page-break-inside: avoid;
+            }
+
+            html, body {
+                width: 11in;
+                height: 8.5in;
+            }
+
+            table.schedule {
+                width: 100%;
+                border-bottom: 1px solid black !important;
+                border-top: 1px solid black !important;
+                border-left: 1px solid black !important;
+                border-right: 1px solid black !important;
+                background-color: lightgrey;
+            }
+
+            table.schedule td {
+                font-size: 9pt;
+                /* border: 1px solid black; */
+                /* border-radius: 10px; */
+                padding: 5px;
+                background-color: lightgrey;
+            }
+
+            .room {
+                width: 11%;
+            }
+
+            .mesa-ballroom {
+                width: 33%;
+            }
+
+            .canyon-room {
+                width: 22%;
+            }
+
+            th {
+                background-color: #efabc5;
+                border: solid black !important;
+                border-width:0 1px 1px 0 !important;
+                text-align: center;
+            }
+
+            .timecell {
+                width: 11%;
+                background-color: white !important;
+                border: solid black !important;
+                border-width:0 1px 1px 0 !important;
+            }
+
+            .registration {
+                background-color: #ff9f0b !important;
+                width: 11%;
+                border: solid black !important;
+                border-width:0 1px 1px 0 !important;
+            }
+
+            .doctoral-consortium {
+                background-color: #66cff7 !important;
+                border: solid black !important;
+                border-width:0 1px 1px 0 !important;
+            }
+
+            .empty {
+                background-color: lightgrey;
+                border: 0px !important;
+            }
+
+            .keynote {
+                /* background-color: #ff9f0b; */
+                background-color: rgba(6, 12, 34, 0.98) !important;
+                color: white;
+                border: solid black !important;
+                border-width:0 1px 1px 0 !important;
+            }
+
+            .session {
+                background-color: white !important;
+                border: solid black !important;
+                border-width:0 1px 1px 0 !important;
+            }
+
+            .nobottomborder {
+                border-bottom: none !important;
+            }
+
+            .notopborder {
+                border-top: none !important;
+            }
+
+            .lunch {
+                background-color: lavender !important;
+                border: solid black !important;
+                border-width:0 1px 1px 0 !important;
+            }
+
+            .nominee {
+            color: red;
+            }
+
+            .staff {
+                background-color: #00e099 !important;
+                font-weight: bolder;
+                border: solid black !important;
+                border-width:0 1px 1px 0 !important;
+            }
+
+            .break {
+                background-color: #ff9f0b !important;
+                border: solid black !important;
+                border-width:0 1px 1px 0 !important;
+            }
+        }
+
+
+
+    </style>
+
+    </head>
+
+<body>
+
+    {{ content }}
+
+</body>
+
+</html>
