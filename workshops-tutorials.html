@@ -105,6 +105,9 @@ permalink: /program/workshops-tutorials/
         {% if workshop.submission %}
         <p><strong>Submission page:</strong> <a href="{{ workshop.submission }}">{{ workshop.submission }}</a></p>
         {% endif %}
+        {% if workshop.flyer %}
+        <p><strong>Flyer with more information:</strong> <a href="{{ workshop.flyer }}">{{ workshop.flyer }}</a></p>
+        {% endif %}
         {% if workshop.delivery %}
         <p><strong>Delivery method:</strong> {{ workshop.delivery }}</p>
         {% endif %}
