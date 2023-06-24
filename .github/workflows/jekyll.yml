@@ -60,7 +60,7 @@ jobs:
             outputFile: ./_site/assets/downloads/schedule-printable.pdf
             usePuppeteer: true
             useScreen: false
-            pdfOptions: '{"format": "Letter", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+            pdfOptions: '{"format": "Letter", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}, "displayHeaderFooter": false, "printBackground": true}'
 
       - name: Deploy to website
         uses: sebastianpopp/ftp-action@releases/v2
