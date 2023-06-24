@@ -39,54 +39,16 @@
             <td rowspan="3" class="align-top session">
                 11:00am &ndash; 12:30pm<br><br>
                 <strong>Session #1: Digital Libraries</strong><br>
-                <ul>
-                <li>
-                    Long Paper: <em>Evaluating Digital Library Search Systems by using Formal Process Modelling</em> by 
-                    Christin Katharina Kreutz, Martin Blum, Philipp Schaer, Ralf Schenkel and Benjamin Weyers
-                </li>
-                <li><span class="nominee"><i class="bi bi-award"></i>Best Student Paper Award nominee</span><br>
-                    Long Paper: <em>Integrated Digital Library System for Long Documents and their Elements</em> by 
-                    Satvik Chekuri, Prashant Chandrasekar, Bipasha Banerjee, Sung Hee Park, Nila Masrourisaadat, Aman Ahuja, William Ingram and Edward Fox 
-                </li>
-                <li>
-                    Late Breaking/Dataset: <em>SMAuC - The Scientific Multi-Authorship Corpus</em> by 
-                    Janek Bevendorff, Philipp Sauer, Lukas Gienapp, Wolfgang Kircheis, Erik Körner, Benno Stein and Martin Potthast
-                </li>
-                <li>
-                    Short Paper: <em>A Conceptual Framework for the Design of Digital Repository Interfaces Supporting Digital Content Reuse Assessment</em> by 
-                    Ali Shiri, Liz Woolcott, Ayla S. Kenfield, Santi Thompson, Elizabeth J. Kelly, Joyce Chapman and Derrick Jefferson                
-                </li>
-                </ul>
+                {% if page.permalink == '/program/schedule/' %}
+                {% include session1-papers.html %}
+                {% endif %}
             </td>
             <td rowspan="3" class="align-top session">
               11:00am &ndash; 12:30pm<br><br>
               <strong>Session #2: Scientometrics</strong><br>
-              <ul>
-                  <li>
-                      Long Paper: <em>Deciphering the Reviewer&apos;s Aspectual Perspective: A Joint Multitask Framework for Aspect and Sentiment Extraction from Scholarly Peer Reviews</em> by 
-                      Hardik Arora, Kartik Shinde and Tirthankar Ghosal
-                  </li>
-                  <li>
-                      Late Breaking/Dataset: <em>CoCon: A Data Set on Combined Contextualized Research Artifact Use</em> by 
-                      Tarek Saier, Youxiang Dong and Michael Färber
-                  </li>
-                  <li>
-                      Late Breaking/Dataset: <em>CitePrompt: Using Prompts to Identify Citation Intent in Scientific Papers</em> by 
-                      Avishek Lahiri, Debarshi Kumar Sanyal and Imon Mukherjee
-                  </li>
-                  <li>
-                      Short Paper: <em>Laying foundations to quantify the &quot;Effort of Reproducibility&quot;</em> by 
-                      Akhil Pandey Akella, Hamed Alhoori and David Koop
-                  </li>
-                  <li><span class="nominee"><i class="bi bi-award"></i>Best Short Paper nominee</span> <br>
-                      Short Paper: <em>MetaEnhance: Metadata Quality Improvement for Electronic Theses and Dissertations of University Libraries</em> by 
-                      Muntabir Hasan Choudhury, Lamia Salsabil, Himarsha R. Jayanetti, Jian Wu, William A. Ingram and Edward A. Fox 
-                  </li>
-                  <li>
-                    Late Breaking/Dataset: <em>unarXive 2022: All arXiv Publications Pre-Processed for NLP, Including Structured Full-Text and Citation Network</em> by 
-                    Tarek Saier, Johan Krause and Michael Färber
-                  </li>
-              </ul>
+              {% if page.permalink == '/program/schedule/' %}
+              {% include session2-papers.html %}
+              {% endif %}
             </td>
         </tr>
         <tr>
@@ -107,48 +69,16 @@
           <td rowspan="3" class="align-top session">
             1:30pm &ndash; 3:00pm<br><br>
             <strong>Session #3: Web Archiving</strong><br>
-            <ul>
-                <li><span class="nominee"><i class="bi bi-award"></i>Best Student Paper Award nominee</span> <br>
-                    Long Paper: <em>Making Changes in Webpages Discoverable: A Change-Text Search Interface for Web Archives</em> by 
-                    Lesley Frew, Michael Nelson and Michele Weigle
-                </li>
-                <li><span class="nominee"><i class="bi bi-award"></i>Vannevar Bush Best Paper Award nominee</span> <br>
-                    Long Paper: <em>Right HTML, Wrong JSON: Challenges in Replaying Archived Webpages Built with Client-Side Rendering</em> by 
-                    Michele Weigle, Michael Nelson, Sawood Alam and Mark Graham
-                </li>
-                <li>
-                    Late Breaking/Dataset: <em>TrendMachine: A Temporal Webpage Resilience Portal</em> by 
-                    Sawood Alam, Kritika Garg, Michele Weigle, Michael Nelson, Mark Graham and Dietrich Ayala
-                </li>
-                <li>
-                    Late Breaking/Dataset: <em>End of Term Web Archive Dataset: Longitudinal Web Archive of .GOV and .MIL Domains</em> by 
-                    Mark Phillips, Kristy Phillips and Sawood Alam
-                </li>
-                <li> <span class="nominee"><i class="bi bi-award"></i>Best Short Paper nominee</span> <br>               
-                    Short Paper: <em>Less than 4% of Archived Instagram Account Pages for the Disinformation Dozen are Replayable</em> by 
-                    Haley Bragg, Himarsha Jayanetti, Michael Nelson and Michele Weigle 
-                </li>
-            </ul>
+            {% if page.permalink == '/program/schedule/' %}
+            {% include session3-papers.html %}
+            {% endif %}
           </td>
           <td rowspan="3" class="align-top session">
             1:30pm &ndash; 3:00pm<br><br>
             <strong>Session #4: Information Retrieval</strong><br>
-            <ul>
-              <li><span class="nominee"><i class="bi bi-award"></i>Best Student Paper Award nominee</span><br>
-                Long Paper: <em>Bibliometric Data Fusion for Biomedical Information Retrieval</em> by 
-                Timo Breuer, Christin Katharina Kreutz, Philipp Schaer and Dirk Tunger
-              </li>
-              <li><span class="nominee"><i class="bi bi-award"></i>Vannevar Bush Best Paper Award nominee</span><br>
-                Long Paper: <em>Toward Connecting Speech Acts and Search Actions in Conversational Search Tasks</em> by 
-                Souvick Ghosh, Satanu Ghosh and Chirag Shah
-              </li>
-              <li>
-                  Long Paper: <em>Binding Data Narrations &mdash; Corroborating the Plausibility of Scientific Narratives by Open Research Data
-                  </em> by 
-                  Denis Nagel, Till Affeldt, Nils Voges, Ulrich Güntzer and Wolf-Tilo Balke
-              </li>
-
-          </ul>
+            {% if page.permalink == '/program/schedule/' %}
+            {% include session4-papers.html %}
+            {% endif %}
           </td>
 
         </tr>
@@ -169,7 +99,10 @@
           <td class="timecell">3:30pm</td>
           <td rowspan="2" class="session">
             3:30pm &ndash; 4:30pm<br><br>
-            <strong>Panel: </strong><em>Research data without borders: How the sections of the NFDI work on cross-cutting topics across disciplines and consortia</em> Speakers: Sonja Schimmler, Franziska Boehm, Michael Diepenbroek, Sonja Herres-Pawlis, Oliver Koepler, Brigitte Mathiak, Peter Pelz, and Ulrich Sax<br>
+            <strong>Panel: </strong> <em>{% include panel1-title.html %}</em>
+            {% if page.permalink == '/program/schedule/' %}
+            {% include panel1-speakers.html %}
+            {% endif %}
           </td>
           <td style="border: 0px;" rowspan="2"></td>
         </tr>

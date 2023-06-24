@@ -29,7 +29,7 @@
   </tr>
   <tr>
     <td class="timecell">9:00am</td>
-    <td rowspan="3" class="session">9:00am &ndash; 10:30am<br><br> Opening and <strong>Panel: </strong><em>AI and Public Archives: Collaborative Leadership for Responsible Adoption</em> Speakers: William Ingram, Rebecca Dikow, Abigail Potter, and Jill Reilly
+    <td rowspan="3" class="session">9:00am &ndash; 10:30am<br><br> Opening and <strong>Panel: </strong><em>AI and Public Archives: Collaborative Leadership for Responsible Adoption</em>{% if page.permalink == '/program/schedule/' %} Speakers: William Ingram, Rebecca Dikow, Abigail Potter, and Jill Reilly{% endif %}
     </td>
     <td rowspan="12" colspan="3"></td>
   </tr>
@@ -48,32 +48,9 @@
       <td rowspan="3" class="align-top session">
           11:00am &ndash; 12:30pm<br><br>
           <strong>Session #7: AI / ML / Entity Extraction</strong><br>
-          <ul>
-            <li>
-              Late Breaking/Dataset: <em>Mining the History Sections of Wikipedia Articles</em> by 
-              Wolfgang Kircheis, Marion Schmidt, Arno Simons, Benno Stein and Martin Potthast
-            </li>
-            <li>
-              Long Paper: <em>Efficient Ultrafine Typing of Named Entities</em> by 
-              Alejandro Sierra-Múnera, Jan Westphal and Ralf Krestel                
-            </li>
-            <li>
-              Long Paper: <em>Mining Semantic Relations in Data References to Understand the Roles of Research Data in Academic Literature</em> by 
-              Lizhou Fan, Sara Lafia, Morgan Wofford, Andrea Thomer, Elizabeth Yakel and Libby Hemphill
-            </li>
-            <li>
-              Late Breaking/Dataset: <em>Soft-Search: Two Datasets to Study the Identification and Production of Research Software</em> by 
-              Eva Maxfield Brown, Lindsey Schwartz, Richard Lewei Huang and Nicholas Weber
-            </li>
-            <li>
-              Short Paper: <em>Extreme Classification for Answer Type Prediction in Question Answering</em> by 
-              Vinay Setty
-            </li>
-            <li>
-              Late Breaking: <em>Zero-shot Entailment of Leaderboards for Empirical AI Research</em> by 
-              Salomon Kabongo Kabenamualu, Jennifer D'Souza and Sören Auer
-            </li>
-          </ul>
+          {% if page.permalink == '/program/schedule/' %}
+          {% include session7-papers.html %}
+          {% endif %}
       </td>
   </tr>
   <tr>

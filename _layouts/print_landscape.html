@@ -38,6 +38,7 @@
             html, body {
                 width: 11in;
                 height: 8.5in;
+                font-size: 8pt;
             }
 
             table.schedule {
@@ -47,10 +48,11 @@
                 border-left: 1px solid black !important;
                 border-right: 1px solid black !important;
                 background-color: lightgrey;
+                font-size: 8pt;
             }
 
             table.schedule td {
-                font-size: 9pt;
+                font-size: 9px;
                 /* border: 1px solid black; */
                 /* border-radius: 10px; */
                 padding: 5px;
@@ -81,6 +83,7 @@
                 background-color: white !important;
                 border: solid black !important;
                 border-width: 1px 1px 1px 1px !important;
+                font-size: 8pt;
             }
 
             .registration {
@@ -88,12 +91,14 @@
                 width: 11%;
                 border: solid black !important;
                 border-width: 1px 1px 1px 1px !important;
+                font-size: 8pt;
             }
 
             .doctoral-consortium {
                 background-color: #66cff7 !important;
                 border: solid black !important;
                 border-width: 1px 1px 1px 1px !important;
+                font-size: 8pt;
             }
 
             .empty {
@@ -107,12 +112,14 @@
                 color: white;
                 border: solid black !important;
                 border-width: 1px 1px 1px 1px !important;
+                font-size: 8pt;
             }
 
             .session {
                 background-color: white !important;
                 border: solid black !important;
                 border-width: 1px 1px 1px 1px !important;
+                font-size: 8pt;
             }
 
             .nobottomborder {
@@ -127,6 +134,7 @@
                 background-color: lavender !important;
                 border: solid black !important;
                 border-width: 1px 1px 1px 1px !important;
+                font-size: 8pt;
             }
 
             .nominee {
@@ -145,6 +153,11 @@
                 border: solid black !important;
                 border-width: 1px 1px 1px 1px !important;
             }
+
+            table { page-break-inside:auto }
+            tr    { page-break-inside:avoid; page-break-after:auto }
+            thead { display:table-header-group }
+            tfoot { display:table-footer-group }
         }
 
 
