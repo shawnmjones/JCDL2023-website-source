@@ -53,16 +53,7 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: make PDF of schedule
-        uses: misaelnieto/web_to_pdf_action@master
-        with:
-            webPageURL: https://2023.jcdl.org/program/schedule-printable/
-            outputFile: ./_site/assets/downloads/schedule-printable.pdf
-            usePuppeteer: true
-            useScreen: false
-            pdfOptions: '{"format": "Letter", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}, "displayHeaderFooter": false, "printBackground": true}'
-
-      - name: Deploy to website
+      - name: Deploy HTML pages to website
         uses: sebastianpopp/ftp-action@releases/v2
         with:
             host: ${{ secrets.FTP_HOSTNAME }}
@@ -72,6 +63,24 @@ jobs:
             remoteDir: "."
             forceSsl: true
 
+      - name: Make PDF of schedule
+        uses: misaelnieto/web_to_pdf_action@master
+        with:
+            webPageURL: https://2023.jcdl.org/program/schedule-printable/
+            outputFile: ./_site/assets/downloads/schedule-printable.pdf
+            usePuppeteer: true
+            useScreen: false
+            pdfOptions: '{"format": "Letter", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}, "displayHeaderFooter": false, "printBackground": true}'
+
+      - name: Deploy PDF of schedule to website
+        uses: sebastianpopp/ftp-action@releases/v2
+        with:
+            host: ${{ secrets.FTP_HOSTNAME }}
+            user: ${{ secrets.FTP_USERNAME }}
+            password: ${{ secrets.FTP_PASSWORD }}
+            localDir: "./_site/assets/downloads/"
+            remoteDir: "./assets/downloads/"
+            forceSsl: true
 
 #   We encountered this bug in SamKirkland's FTP-Deploy-Action,
 #   see: https://github.com/SamKirkland/FTP-Deploy-Action/issues/322
