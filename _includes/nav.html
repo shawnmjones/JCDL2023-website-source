@@ -12,15 +12,15 @@
 
         <ul>
           <li><a class="nav-link scrollto {% if page.url == '/' %}active{% endif %}" href="{{ site.url }}">Home</a></li>
-          <li><a class="nav-link scrollto" href="{{ site.url }}/code-of-conduct/">Code of Conduct</a></li>
+          <li><a class="nav-link scrollto {% if page.url == '/code-of-conduct/' %}active{% endif %}" href="{{ site.url }}/code-of-conduct/">Code of Conduct</a></li>
           <!-- <li class="dropdown"><a href="#" title="Attendance information coming soon"><span>Attend</span><i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="/attend/travel/">Travel To Santa Fe</a></li>
             </ul>
           </li> -->
 
-          <li><a class="nav-link scrollto" href="{{ site.url }}/keynotes/">Keynotes</a></li>
-          <li><a class="nav-link scrollto" href="{{ site.url }}/registration/">Registration</a></li>
+          <li><a class="nav-link scrollto {% if page.url == '/keynotes/' %}active{% endif %}" href="{{ site.url }}/keynotes/">Keynotes</a></li>
+          <li><a class="nav-link scrollto {% if page.url == '/registration/' %}active{% endif %}" href="{{ site.url }}/registration/">Registration</a></li>
             
           <li class="dropdown"><a class="nav-link scrollto {% if page.url contains '/location/' %}active{% endif %}" href="#"><span>Location</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
