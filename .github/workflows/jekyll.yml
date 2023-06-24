@@ -59,7 +59,7 @@ jobs:
             webPageURL: https://2023.jcdl.org/program/schedule-printable/
             outputFile: ./_site/assets/downloads/schedule-printable.pdf
             usePuppeteer: true
-            useScreen: true
+            useScreen: false
             pdfOptions: '{"format": "Letter", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
 
       - name: Deploy to website
