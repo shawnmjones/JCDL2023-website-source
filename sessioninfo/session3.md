@@ -55,9 +55,12 @@ Q&A: 2 minutes
 
 Note: 
 
-Slides: ???
+Slides: [../alam-session3.pdf](../alam-session3.pdf)
 
-Sawood Alam is a member of the Internet Archive and a well-publishmed member of the web archiving community. He is a former member of the Web Science and Digital Libraries Research Group.
+Dr. Sawood Alam is the Research Lead of the Wayback Machine at the
+Internet Archive. If you plan to work with the datasets from the Wayback
+Machine for your research or have projects to collaborate on with the
+Internet Archive, Dr. Alam is the person to talk to.
 
 ---
 
