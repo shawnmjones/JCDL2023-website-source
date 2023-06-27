@@ -19,7 +19,7 @@ Q&A: 5 minutes
 
 Note: Best Student Paper Award nominee
 
-Slides: (forthcoming)
+Slides: [../frew-session3.pptx](../frew-session3.pptx)
 
 Lesley Frew is a graduate student at Old Dominion University pursuing her master’s degree in computer science. She is a member of the Web Science and Digital Libraries research group. Her research focuses on full-text search in web archives. Lesley works as a dual enrollment computer science teacher, and has taught for 12 years in Virginia public schools.
 
@@ -45,7 +45,7 @@ Michele Weigle is a Professor of Computer Science at Old Dominion University and
 
 **TrendMachine: A Temporal Webpage Resilience Portal**
 
-Presenter: ???
+Presenter: Sawood Alam
 
 Type: Late Breaking/Dataset
 
@@ -57,7 +57,7 @@ Note:
 
 Slides: ???
 
-????
+Sawood Alam is a member of the Internet Archive and a well-publishmed member of the web archiving community. He is a former member of the Web Science and Digital Libraries Research Group.
 
 ---
 
